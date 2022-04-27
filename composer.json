@@ -1,0 +1,51 @@
+{
+    "name": "sachinkiranti/nrb-forex-api",
+    "description": "Fetch Nepal Rastra Bank Forex Api",
+    "keywords": [
+        "laravel",
+        "nrb",
+        "forex",
+        "nepal"
+    ],
+    "type": "library",
+    "license": "MIT",
+    "support": {
+        "issues": "https://github.com/sachinkiranti/nrb-forex-api/issues",
+        "source": "https://github.com/sachinkiranti/nrb-forex-api"
+    },
+    "autoload": {
+        "psr-4": {
+            "SachinKiranti\\NrbForexApi\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "Sachin Rai",
+            "email": "sachinkiranti@gmail.com",
+            "homepage": "https://raisachin.com.np",
+            "role": "Maintainer"
+        }
+    ],
+    "require": {
+        "php": "^7.3|^8.0|^8.1",
+        "illuminate/support": "^6.0|^7.0|^8.0|^9.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "SachinKiranti\\NrbForexApi\\NrbForexApiServiceProvider"
+            ],
+            "aliases": {
+                "NrbForexApi": "SachinKiranti\\NrbForexApi\\Facades\\NrbForexApi"
+            }
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
