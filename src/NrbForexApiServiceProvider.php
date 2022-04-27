@@ -16,7 +16,7 @@ class NrbForexApiServiceProvider extends ServiceProvider
     {
         $this->publishes([
             __DIR__.'/../config/nrb-forex-api.php' => config_path('nrb-forex-api.php'),
-        ], 'config');
+        ], 'nrb-forex-api');
     }
 
     /**
